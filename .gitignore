@@ -70,3 +70,15 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+
+# Extra Assets
+/Assets/Art/freecutetileset
+/Assets/Art/freeknight
+/Assets/Art/henrysofrware-freepixelfood
+/Assets/Art/kyrises-rpg-icon-pack
+/Assets/Art/luizmelo_Monsters_Creatures_Fantasy
+/Assets/Art/rvros-adventurer
+/Assets/UI/Fonts/m5x7.ttf
+/Assets/Audio/Music/10 Battle1 (8bit style)
+/Assets/Audio/SFX/RPG_Essentials_Free
