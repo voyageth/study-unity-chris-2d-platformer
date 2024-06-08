@@ -10971,6 +10971,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7014310929499042914, guid: 7247b94f8bdc13b4ab51fbc1879c983e, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8636031945973376309, guid: 7247b94f8bdc13b4ab51fbc1879c983e, type: 3}
       propertyPath: m_Name
       value: Player
@@ -11000,13 +11004,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4237681616771894326, guid: fd36ae2cbaff0d7429eabf591326fb4c, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4237681616771894326, guid: fd36ae2cbaff0d7429eabf591326fb4c, type: 3}
+      propertyPath: damageableHit.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4336679585897436345, guid: fd36ae2cbaff0d7429eabf591326fb4c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.6572704
+      value: -2.73
       objectReference: {fileID: 0}
     - target: {fileID: 4336679585897436345, guid: fd36ae2cbaff0d7429eabf591326fb4c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7782524
+      value: -1.79
       objectReference: {fileID: 0}
     - target: {fileID: 4336679585897436345, guid: fd36ae2cbaff0d7429eabf591326fb4c, type: 3}
       propertyPath: m_LocalPosition.z
