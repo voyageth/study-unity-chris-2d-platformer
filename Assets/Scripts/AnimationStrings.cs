@@ -9,4 +9,5 @@ internal class AnimationStrings
     internal static string IS_ON_CEILING = "isOnCeiling";
     internal static string ATTACK_TRIGGER = "attack";
     internal static string CAN_MOVE = "canMove";
+    internal static string HAS_TARGET = "hasTarget";
 }

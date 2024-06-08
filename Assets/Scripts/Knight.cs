@@ -7,9 +7,12 @@ using UnityEngine;
 public class Knight : MonoBehaviour
 {
     public float walkSpeed = 3f;
+    public DetectionZone attackZone;
+    public float walkStopRate = 0.05f;
 
     Rigidbody2D rb;
     TouchingDirections touchingDirections;
+    Animator animator;
 
     public enum WalkableDirection { Right, Left }
 
@@ -43,10 +46,36 @@ public class Knight : MonoBehaviour
         }
     }
 
+    public bool _hasTarget = false;
+
+    public bool HasTarget { get
+        {
+            return _hasTarget;
+        } 
+        private set
+        {
+            _hasTarget = value;
+            animator.SetBool(AnimationStrings.HAS_TARGET, value);
+        }
+    }
+
+    public bool CanMove { 
+        get
+        {
+            return animator.GetBool(AnimationStrings.CAN_MOVE);
+        } 
+    }
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         touchingDirections = GetComponent<TouchingDirections>();
+        animator = GetComponent<Animator>();
+    }
+
+    void Update()
+    {
+        HasTarget = attackZone.detectedColliders.Count > 0;
     }
 
     private void FixedUpdate()
@@ -56,7 +85,10 @@ public class Knight : MonoBehaviour
             FlipDirection();
         }
 
-        rb.velocity = new Vector2(walkSpeed * walkDirectionVector.x, rb.velocity.y);
+        if (CanMove)
+            rb.velocity = new Vector2(walkSpeed * walkDirectionVector.x, rb.velocity.y);
+        else 
+            rb.velocity = new Vector2(Mathf.Lerp(rb.velocity.x, 0, walkStopRate), rb.velocity.y);
     }
 
     private void FlipDirection()
@@ -73,17 +105,5 @@ public class Knight : MonoBehaviour
         {
             Debug.LogError("Current walkable direction is not set to legal values of right or left");
         }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
