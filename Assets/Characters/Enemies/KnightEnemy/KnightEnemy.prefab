@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 368430010051945691}
   - component: {fileID: 8371851582553933459}
   - component: {fileID: 4770194280933401295}
-  - component: {fileID: 7349626094867195504}
-  - component: {fileID: 838267017014999936}
   - component: {fileID: 7299558756872007433}
+  - component: {fileID: 838267017014999936}
+  - component: {fileID: 7349626094867195504}
+  - component: {fileID: 4237681616771894326}
   m_Layer: 8
   m_Name: KnightEnemy
   m_TagString: Untagged
@@ -152,21 +153,27 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0478701, y: 0.0072112083}
   m_Size: {x: 0.9316977, y: 2.3316145}
   m_Direction: 0
---- !u!114 &7349626094867195504
-MonoBehaviour:
+--- !u!95 &7299558756872007433
+Animator:
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5539680033844616320}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86af45cf1162e2f4ca5a87bbb9c0fad3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 3
-  attackZone: {fileID: 4571245318962359805}
-  _hasTarget: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f0eb72beaa6a934990ba3d80d37a22d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &838267017014999936
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -199,27 +206,35 @@ MonoBehaviour:
   _isGround: 0
   _isOnWall: 0
   _isOnCeiling: 0
---- !u!95 &7299558756872007433
-Animator:
-  serializedVersion: 5
+--- !u!114 &7349626094867195504
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5539680033844616320}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 4f0eb72beaa6a934990ba3d80d37a22d, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86af45cf1162e2f4ca5a87bbb9c0fad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  walkSpeed: 3
+  attackZone: {fileID: 4571245318962359805}
+  walkStopRate: 0.05
+  _hasTarget: 0
+--- !u!114 &4237681616771894326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5539680033844616320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 647c2c76de7eb794fa3f9bb1e1e8cf0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHealth: 100
 --- !u!1 &8566649974062063179
 GameObject:
   m_ObjectHideFlags: 0

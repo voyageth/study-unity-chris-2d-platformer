@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 1361091501047176719}
   - component: {fileID: 9157643426065640567}
   - component: {fileID: 3509577061532237185}
-  - component: {fileID: 7883871296142057780}
   - component: {fileID: 8991182359242274188}
   - component: {fileID: 6286272103970056971}
   - component: {fileID: 356492942431149439}
   - component: {fileID: 3319801359737052310}
-  - component: {fileID: 4466185678988978231}
+  - component: {fileID: 7883871296142057780}
+  - component: {fileID: 1246413235289780564}
   m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
@@ -118,25 +118,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &7883871296142057780
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8636031945973376309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 109d5e25da73fca4e9bee50086ba92f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  walkSpeed: 5
-  runSpeed: 8
-  airWalkSpeed: 3
-  jumpImpulse: 10
-  _isMoning: 0
-  _isRunning: 0
-  _isFacingRight: 1
 --- !u!114 &8991182359242274188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -363,7 +344,7 @@ MonoBehaviour:
   _isGround: 0
   _isOnWall: 0
   _isOnCeiling: 0
---- !u!114 &4466185678988978231
+--- !u!114 &7883871296142057780
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -372,26 +353,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 8636031945973376309}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1203c2490b5b83c44b842749b74b6cf1, type: 3}
+  m_Script: {fileID: 11500000, guid: 109d5e25da73fca4e9bee50086ba92f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  contactFilter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
-  groundDistance: 0.05
-  wallDistance: 0.2
-  ceilingDistance: 0.05
-  _isGround: 0
-  _isOnWall: 0
-  _isOnCeiling: 0
+  walkSpeed: 5
+  runSpeed: 8
+  airWalkSpeed: 3
+  jumpImpulse: 10
+  _isMoning: 0
+  _isRunning: 0
+  _isFacingRight: 1
+--- !u!114 &1246413235289780564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8636031945973376309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 647c2c76de7eb794fa3f9bb1e1e8cf0d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  invincibilityTime: 0.25
+  _maxHealth: 100
+  _health: 100
+  _isAlive: 1
+  isInvinible: 0
