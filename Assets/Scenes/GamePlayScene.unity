@@ -509,7 +509,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.76, y: -1.7, z: -9.982316}
+  m_LocalPosition: {x: -6.13, y: -1.8, z: -9.982316}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -627,7 +627,7 @@ Transform:
   m_GameObject: {fileID: 603998056}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.76, y: -1.7, z: -9.982316}
+  m_LocalPosition: {x: -6.13, y: -1.8, z: -9.982316}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11255,11 +11255,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1361091501047176719, guid: 7247b94f8bdc13b4ab51fbc1879c983e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.76
+      value: -6.13
       objectReference: {fileID: 0}
     - target: {fileID: 1361091501047176719, guid: 7247b94f8bdc13b4ab51fbc1879c983e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.7
+      value: -1.8
       objectReference: {fileID: 0}
     - target: {fileID: 1361091501047176719, guid: 7247b94f8bdc13b4ab51fbc1879c983e, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11304,18 +11304,6 @@ PrefabInstance:
     - target: {fileID: 8636031945973376309, guid: 7247b94f8bdc13b4ab51fbc1879c983e, type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8991182359242274188, guid: 7247b94f8bdc13b4ab51fbc1879c983e, type: 3}
-      propertyPath: m_ActionEvents.Array.size
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 8991182359242274188, guid: 7247b94f8bdc13b4ab51fbc1879c983e, type: 3}
-      propertyPath: m_ActionEvents.Array.data[14].m_ActionId
-      value: 19fb15eb-2f32-4501-868c-3359178dbc86
-      objectReference: {fileID: 0}
-    - target: {fileID: 8991182359242274188, guid: 7247b94f8bdc13b4ab51fbc1879c983e, type: 3}
-      propertyPath: m_ActionEvents.Array.data[14].m_ActionName
-      value: Player/Jump[/Keyboard/space]
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11454,7 +11442,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4336679585897436345, guid: fd36ae2cbaff0d7429eabf591326fb4c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.73
+      value: 4.1
       objectReference: {fileID: 0}
     - target: {fileID: 4336679585897436345, guid: fd36ae2cbaff0d7429eabf591326fb4c, type: 3}
       propertyPath: m_LocalPosition.y
