@@ -14,4 +14,5 @@ internal class AnimationStrings
     internal static string IS_HIT = "isHit";
     internal static string HIT_TRIGGER = "hit";
     internal static string LOCK_VELOCITY = "lockVelocity";
+    internal static string ATTACK_COOLDOWN = "attackCooldown";
 }
