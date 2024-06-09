@@ -11988,7 +11988,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2855575275958083119, guid: 8357b3c0d7bab8740b78b178eda39de6, type: 3}
       propertyPath: _health
-      value: 10
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7645596904897130404, guid: 8357b3c0d7bab8740b78b178eda39de6, type: 3}
       propertyPath: waypoints.Array.size
