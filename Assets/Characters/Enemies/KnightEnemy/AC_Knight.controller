@@ -35,6 +35,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeTime: 0.5
+  fadeDealy: 0
+--- !u!114 &-7564670676378256565
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac537c8e2fbfff842904cef3c72103f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceToPlay: {fileID: 8300000, guid: d4983389ee8bf0a4b87de601ac7b9736, type: 3}
+  volume: 1
+  playOnEnter: 1
+  playOnExit: 0
+  playAfterDelay: 0
+  playDelay: 0.25
 --- !u!1102 &-7542576261195281202
 AnimatorState:
   serializedVersion: 6
@@ -50,6 +69,7 @@ AnimatorState:
   m_StateMachineBehaviours:
   - {fileID: -1140963648520266929}
   - {fileID: 2200795310891267677}
+  - {fileID: -1853728580945101545}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -181,6 +201,24 @@ AnimatorStateTransition:
   m_InterruptionSource: 0
   m_OrderedInterruption: 1
   m_CanTransitionToSelf: 1
+--- !u!114 &-1853728580945101545
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac537c8e2fbfff842904cef3c72103f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceToPlay: {fileID: 8300000, guid: 715014e77ec7fe843adba7df5984cc55, type: 3}
+  volume: 1
+  playOnEnter: 1
+  playOnExit: 0
+  playAfterDelay: 0
+  playDelay: 0.25
 --- !u!114 &-1140963648520266929
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -357,6 +395,7 @@ AnimatorState:
   - {fileID: -9010529067549215465}
   m_StateMachineBehaviours:
   - {fileID: 150758327496808879}
+  - {fileID: 5445114637146790831}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
@@ -482,6 +521,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fadeTime: 0.5
+  fadeDealy: 0
 --- !u!1109 &5240701703833123521
 AnimatorTransition:
   m_ObjectHideFlags: 1
@@ -502,6 +542,24 @@ AnimatorTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 1
+--- !u!114 &5445114637146790831
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac537c8e2fbfff842904cef3c72103f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sourceToPlay: {fileID: 8300000, guid: bd2bfd11acc2ccf499dcc167316a01b1, type: 3}
+  volume: 1
+  playOnEnter: 1
+  playOnExit: 0
+  playAfterDelay: 0
+  playDelay: 0.25
 --- !u!1102 &5732281633196252079
 AnimatorState:
   serializedVersion: 6
@@ -516,6 +574,7 @@ AnimatorState:
   m_StateMachineBehaviours:
   - {fileID: 3381806709890588175}
   - {fileID: -8863110292387351817}
+  - {fileID: -7564670676378256565}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 0
   m_WriteDefaultValues: 1
